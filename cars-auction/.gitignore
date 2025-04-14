@@ -1,0 +1,24 @@
+# .NET build files
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ASP.NET secrets and configs
+appsettings.Development.json
+appsettings.*.json
+
+# Rider / VS Code
+.idea/
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+logs/
+
+# Docker
+docker-compose.override.yml
+.env

@@ -1,0 +1,4 @@
+# Rider / VS Code
+.idea/
+.vscode/
+*.code-workspace
