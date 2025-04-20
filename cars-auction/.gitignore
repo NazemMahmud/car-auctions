@@ -1,8 +1,22 @@
 # .NET build files
-bin/
-obj/
-*.user
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+
+# User-specific files
+*.rsuser
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
 
@@ -16,9 +30,44 @@ appsettings.*.json
 *.code-workspace
 
 # Logs
-*.log
-logs/
+[Ll]og/
+[Ll]ogs/
 
 # Docker
 docker-compose.override.yml
 .env
+
+# Rider / VS Code
+*.idea/
+*.vscode/
+*.code-workspace
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
