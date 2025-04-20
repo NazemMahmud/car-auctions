@@ -11,6 +11,8 @@ builder.Services.AddDbContext<AuctionDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,5 +32,13 @@ app.UseAuthentication();
 * direct the Http request to the correct API endpoint.
 */
 app.MapControllers();
+
+try {
+    DbInitializer.InitDb(app);
+}
+catch (Exception e)
+{
+    Console.WriteLine(e);
+}
 
 app.Run();
