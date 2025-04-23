@@ -35,6 +35,7 @@ appsettings.*.json
 
 # Docker
 docker-compose.override.yml
+docker-compose.yml
 .env
 
 # Rider / VS Code

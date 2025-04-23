@@ -4,9 +4,20 @@ services:
     ports:
       - 5432:5432 # LOCALPORT:DOCKERPORT
     environment:
-      - POSTGRES_PASSWORD=postgrespw
+      - POSTGRES_PASSWORD=postgrespwa
     volumes:
       - pgdata:/var/lib/postgresql/data
+  
+  mongodb:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=mongopwa
+    ports:
+      - 27017:27017 # localPort : dockerPort
+    volumes:
+      - mongodata:/var/lib/mongodb/data
 
 volumes:
   pgdata:
+  mongodata:
